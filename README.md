@@ -21,11 +21,18 @@ _$ pytest --html=report.html_
 
 5. Run the scenarios in parallel:
 
-_$ pytest -n auto _
+_$ pytest -n auto_
 
 OR: 
-_$ pytest -n x (x is an integer)_
 
-[How-to: shortcut an environment config]
+_$ pytest \-n x (x is an integer)_
 
-**TBD**
+[Shorthand of environment config]
+
+1. Download the sample pytest image from Docker Hub via command:
+
+_$ docker pull havtt/sample-pytest:sample_
+
+2. Run the downloaded Docker image via terminal/PS window:
+
+_$ docker run havtt/sample-pytest:sample_
