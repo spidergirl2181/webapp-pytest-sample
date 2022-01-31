@@ -10,4 +10,4 @@ RUN pip install pytest-html
 
 WORKDIR /user/local/
 
-COPY pytest pytest/
+COPY webapp-pytest-sample webapp-pytest-sample/
