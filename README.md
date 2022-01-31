@@ -34,7 +34,7 @@ $ pytest -n auto
 OR: 
 
 ``` sh
-$ pytest \-n x
+$ pytest -n x
 ```
 in which: x is an integer
 
