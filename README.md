@@ -53,7 +53,14 @@ $ docker run --name pytest -d havtt/pytest-sample:latest sleep infinity
 $ docker exec -it pytest /bin/bash/
 ```
 
-3. After the terminal commands are remotely executable on running Docker container, let this pytest sample with recommended commands in "How to: run the sample test"
+3. After the terminal commands are remotely executable on running Docker container, try this pytest sample with Pytest commands recommended in "How to: run the sample test".
 4. Use command: 
-_$ exit_ to terminate the remote connection to the running container
-_$ docker stop pytest_ to terminate the running container
+``` sh
+$ exit 
+```
+to terminate the remote connection to the running container
+
+``` sh
+$ docker stop pytest
+```
+to terminate the running container
