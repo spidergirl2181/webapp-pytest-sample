@@ -45,11 +45,16 @@ in which: x is an integer
 ``` sh
 $ docker pull havtt/pytest_sample@sha256:60e93a8c9946c2eca5bf4891ac2310bd2cbcc4b73ccd816abfe6111f959b4c83
 ```
+OR:
+
+``` sh
+$ docker pull havtt/pytest_sample:sample
+```
 
 2. Run the downloaded Docker image via terminal/PS window:
 
 ``` sh
-$ docker run --name pytest -d havtt/pytest-sample:latest sleep infinity
+$ docker run --name pytest -d havtt/pytest_sample:sample sleep infinity
 $ docker exec -it pytest /bin/bash/
 ```
 
