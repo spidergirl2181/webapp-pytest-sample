@@ -1,38 +1,59 @@
 # webapp-pytest-sample
 
-[Pre-requisites]
+## Pre-requisites
 1. Install python version >= 3.6 (Download at: https://www.python.org/downloads/)
 2. Install pip on your local machine if you don't have pip pre-installed (Guideline: https://pip.pypa.io/en/stable/installation/)
-3. Install other necessary packages (requests, pytest, pytest-xdist, pytest-html) via pip:
+3. Install other necessary packages (_requests, pytest, pytest-xdist, pytest-html_) via pip:
 
-_$ pip install -r requirements.txt_
- 
-[How-to: run the sample test]
+``` sh
+$ pip install -r requirements.txt
+```
+
+## How-to: run the sample test
 
 1. Clone this repository to your local machine
 2. Standing at root directory: 'webapp-pytest-sample', open terminal/command-line window
 3. Run the sample test with logs on console only:
 
-_$ pytest_
+``` sh
+$ pytest
+```
 
 4. Run the sample test and get test report save at the root directory:
 
-_$ pytest --html=report.html_
+``` sh
+$ pytest --html=report.html
+```
 
 5. Run the scenarios in parallel:
 
-_$ pytest -n auto_
+``` sh
+$ pytest -n auto
+```
 
 OR: 
 
-_$ pytest \-n x (x is an integer)_
+``` sh
+$ pytest \-n x
+```
+in which: x is an integer
 
-[Shorthand of environment config]
+## Shorthand of environment config
 
 1. Download the sample pytest image from Docker Hub via command:
 
-_$ docker pull havtt/sample-pytest:sample_
+``` sh
+$ docker pull havtt/pytest-sample:latest
+```
 
 2. Run the downloaded Docker image via terminal/PS window:
 
-_$ docker run havtt/sample-pytest:sample_
+``` sh
+$ docker run --name pytest -d havtt/pytest-sample:latest sleep infinity
+$ docker exec -it pytest /bin/bash/
+```
+
+3. After the terminal commands are remotely executable on running Docker container, let this pytest sample with recommended commands in "How to: run the sample test"
+4. Use command: 
+_$ exit_ to terminate the remote connection to the running container
+_$ docker stop pytest_ to terminate the running container
