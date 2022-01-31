@@ -43,7 +43,7 @@ in which: x is an integer
 1. Download the sample pytest image from Docker Hub via command:
 
 ``` sh
-$ docker pull havtt/pytest-sample:latest
+$ docker pull havtt/pytest_sample@sha256:60e93a8c9946c2eca5bf4891ac2310bd2cbcc4b73ccd816abfe6111f959b4c83
 ```
 
 2. Run the downloaded Docker image via terminal/PS window:
